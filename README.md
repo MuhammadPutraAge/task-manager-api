@@ -44,7 +44,7 @@ Easily create, read, update, and delete your tasks with a clean architecture and
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/yourusername/task-manager-api.git
+git clone https://github.com/MuhammadPutraAge/task-manager-api
 cd task-manager-api
 ```
 
