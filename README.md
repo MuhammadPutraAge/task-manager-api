@@ -29,7 +29,6 @@ Easily create, read, update, and delete your tasks with a clean architecture and
 │   └── task/           # Task domain (handlers, models, repository)
 ├── pkg/                # Shared utilities
 │   └── utils/
-├── tmp/                # Build artifacts
 ├── .env                # Environment variables
 ├── .air.toml           # Air config for live reload
 ├── docker-compose.yml  # Docker Compose setup
