@@ -11,13 +11,13 @@ import (
 
 func main() {
 	config.LoadEnv()
-	database := db.Init()
+	db.Init()
 
-	if err := database.AutoMigrate(&task.Task{}); err != nil {
+	if err := db.DB.AutoMigrate(&task.Task{}); err != nil {
 		log.Fatalf("❌ Failed to migrate database: %v", err)
 	}
 
-	taskRepository := task.NewRepository(database)
+	taskRepository := task.NewRepository(db.DB)
 	taskHandler := task.NewHandler(taskRepository)
 
 	mux := http.NewServeMux()
